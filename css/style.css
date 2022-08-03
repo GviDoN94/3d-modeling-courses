@@ -1,4 +1,4 @@
-html {
+/* html {
   box-sizing: border-box;
 }
 
@@ -6,7 +6,7 @@ html {
 ::before,
 ::after {
   box-sizing: inherit;
-}
+} */
 
 @font-face {
   font-family: 'Roboto';
@@ -44,4 +44,8 @@ html {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.flex {
+  display: flex;
 }
