@@ -1,3 +1,8 @@
+:root {
+  --blue: #3F2AFF;
+  --text-white: #FFF;
+
+}
 /* html {
   box-sizing: border-box;
 }
@@ -28,6 +33,8 @@
     font-display: swap;
 }
 
+/* global */
+
 .body {
   min-width: 320px;
   font-family: 'Roboto', sans-serif;
@@ -48,4 +55,29 @@
 
 .flex {
   display: flex;
+}
+
+/* header */
+.header__wrap {
+  padding: 28px 0;
+  background-color: var(--blue);
+}
+
+.header__content {
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 57px;
+}
+
+.nav__link {
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+  color: var(--text-white);
 }
