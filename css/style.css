@@ -1,7 +1,7 @@
 :root {
   --blue: #3F2AFF;
   --white: #FFF;
-  --title-black: #2E2B44;
+  --black: #2E2B44;
   --text-gray: #666;
   --section-bg-dark: #212133;
   --teacher-descr: #85859B;
@@ -83,7 +83,7 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 100%;
-  color: var(--title-black);
+  color: var(--black);
 }
 
 .title--white {
@@ -240,7 +240,7 @@
 
 /* courses */
 .courses {
-  padding: 75px 0;
+  padding: 75px 0 80px;
   background-color: var(--white);
 }
 
@@ -321,4 +321,41 @@
   padding: 20px 60px;
   font-size: 16px;
   line-height: 19px;
+}
+
+/* footer */
+.footer__top {
+  padding: 30px 0;
+  background-color: var(--black);
+}
+
+.footer__wrap {
+  justify-content: center;
+}
+
+.social__item {
+  font-size: 0;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 34px;
+}
+
+.social__link {
+  display: inline-block;
+}
+
+.footer__bottom {
+  padding-top: 3px;
+  background-color: var(--white);
+}
+
+.copyright {
+  font-size: 13px;
+  line-height: 15px;
+  color: var(--black);
+}
+
+.copyright__sign {
+  color: var(--blue);
 }
