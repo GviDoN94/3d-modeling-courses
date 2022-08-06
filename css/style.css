@@ -1,7 +1,8 @@
 :root {
   --blue: #3F2AFF;
-  --text-white: #FFF;
-
+  --white: #FFF;
+  --title-black: #2E2B44;
+  --text-gray: #666;
 }
 /* html {
   box-sizing: border-box;
@@ -65,8 +66,28 @@
   font-size: 18px;
   line-height: 21px;
   text-decoration: none;
-  color: var(--text-white);
+  color: var(--white);
   background-color: var(--blue);
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: var(--title-black);
+}
+
+.descr {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text-gray);
 }
 
 /* header */
@@ -91,7 +112,7 @@
   font-size: 18px;
   line-height: 21px;
   text-decoration: none;
-  color: var(--text-white);
+  color: var(--white);
 }
 
 /* hero */
@@ -109,7 +130,7 @@
   font-weight: 700;
   font-size: 60px;
   line-height: 100%;
-  color: var(--text-white);
+  color: var(--white);
 }
 
 .hero__descr {
@@ -117,10 +138,66 @@
   margin-bottom: 62px;
   font-size: 18px;
   line-height: 150%;
-  color: var(--text-white);
+  color: var(--white);
 }
 
 .hero__img {
   padding: 15px 2px 7px;
   padding-right: 0;
+}
+
+/* benefits */
+.benefits {
+  background-color: var(--white);
+}
+
+.benefits__top {
+  margin-bottom: 35px;
+}
+
+.benefits__img {
+  align-items: center;
+}
+
+.benefits__title {
+  margin-bottom: 17px;
+  max-width: 380px;
+}
+
+.benefits__decsr {
+  max-width: 585px;
+}
+
+.benefit__descr {
+  position: relative;
+  display: inline-block;
+  padding-left: 110px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--text-gray);
+}
+
+.benefit__descr::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.benefit__descr--first-img::before {
+  background-image: url('../img/benefit-1.svg');
+}
+
+.benefit__descr--second-img::before {
+  background-image: url('../img/benefit-2.svg');
+}
+
+.benefit__descr--third-img::before {
+  background-image: url('../img/benefit-3.svg');
 }
