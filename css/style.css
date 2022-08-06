@@ -3,6 +3,8 @@
   --white: #FFF;
   --title-black: #2E2B44;
   --text-gray: #666;
+  --section-bg-dark: #212133;
+  --teacher-descr: #85859B;
 }
 /* html {
   box-sizing: border-box;
@@ -76,10 +78,15 @@
 
 .title {
   margin: 0;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 40px;
   line-height: 100%;
   color: var(--title-black);
+}
+
+.title--white {
+  color: var(--white)
 }
 
 .descr {
@@ -125,12 +132,8 @@
 }
 
 .hero__title {
-  margin: 0;
   margin-bottom: 28px;
-  font-weight: 700;
   font-size: 60px;
-  line-height: 100%;
-  color: var(--white);
 }
 
 .hero__descr {
@@ -148,6 +151,7 @@
 
 /* benefits */
 .benefits {
+  padding-bottom: 90px;
   background-color: var(--white);
 }
 
@@ -200,4 +204,31 @@
 
 .benefit__descr--third-img::before {
   background-image: url('../img/benefit-3.svg');
+}
+
+/* teachers */
+.teachers {
+  padding: 75px 0 73px;
+  background-color: var(--section-bg-dark);
+}
+
+.teachers__title {
+  margin-bottom: 23px;
+}
+
+.teacher__img {
+  margin-bottom: 27px;
+}
+
+.teacher__name {
+  margin: 0;
+  margin-bottom: 7px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--white);
+}
+
+.techer__descr {
+  color: var(--teacher-descr);
 }
