@@ -139,11 +139,11 @@
   position: relative;
   outline: none;
   color: var(--white);
+  transition: color 0.3s ease-in-out;
 }
 
 .header__svg {
   fill: currentColor;
-  transition: fill 0.3s ease-in-out;
 }
 
 .header__logo:focus-visible {
@@ -400,6 +400,7 @@
   display: inline-block;
   outline: none;
   color: var(--white);
+  transition: color 0.3s ease-in-out;
 }
 
 .social__link:focus-visible {
