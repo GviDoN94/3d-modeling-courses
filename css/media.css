@@ -37,6 +37,10 @@
     margin-bottom: 22px;
   }
 
+  .techer__descr {
+    margin-right: -2px;
+  }
+
   /* courses */
   .course {
     min-height: 556px
@@ -64,5 +68,65 @@
 
   .course__link {
     padding: 20px 56px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* header */
+  .header__wrap {
+    padding: 30px 0;
+  }
+
+  .header__logo {
+    margin-bottom: 27px;
+  }
+
+  /* hero */
+  .hero__content {
+    padding: 77px 0 135px;
+  }
+
+  /* benefits */
+  .benefits {
+    padding-bottom: 54px;
+  }
+
+  .benefits__top {
+    margin-bottom: 24px;
+  }
+
+  /* teachers */
+  .teacher:not(:nth-last-child(-n+2)) {
+    margin-bottom: 23px;
+  }
+
+  /* courses */
+  .course {
+    min-height: 653px;
+    padding-right: 22px;
+  }
+
+  .course--first-img::before {
+    background-image: url('../img/course-1-576.png');
+  }
+
+  .course--second-img::before {
+    background-image: url('../img/course-2-576.png');
+  }
+
+  .course--third-img::before {
+    background-image: url('../img/course-3-576.png');
+  }
+
+  .course--fourth-img::before {
+    background-image: url('../img/course-4-576.png');
+  }
+
+  .course__title {
+    line-height: 130%;
+  }
+
+  .course__link {
+    padding: 20px 48px;
   }
 }
