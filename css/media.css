@@ -1,4 +1,16 @@
 @media (max-width: 1199px) {
+  /* hero */
+  .hero__img {
+    padding: 117px 0;
+  }
+
+  /* benefits */
+  .benefit__descr {
+    padding: 2px 0;
+    padding-left: 110px;
+  }
+
+  /* course */
   .course--first-img::before {
     background-image: url('../img/course-1-768.png');
   }
@@ -34,9 +46,9 @@
   .hero__descr {
     max-width: 345px;
   }
+
   .hero__img {
     margin-left: -60px;
-    padding: 117px 0;
     width: 122%;
   }
 
@@ -207,7 +219,7 @@
 
   /* benefits */
   .benefits {
-    padding-bottom: 53px;
+    padding-bottom: 49px;
   }
 
   .benefits__picture {
@@ -228,7 +240,7 @@
   }
 
   .benefit__item:not(:last-child) {
-    margin-bottom: 33px;
+    margin-bottom: 30px;
   }
 
   .benefit__descr {

@@ -58,6 +58,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.flex {
+  display: flex;
+}
+
 .list-reset {
   margin: 0;
   padding: 0;
@@ -297,6 +301,11 @@
 
 .benefits__top {
   margin-bottom: 23px;
+}
+
+.benefits__picture {
+  display: flex;
+  align-items: center;
 }
 
 .benefits__title {
