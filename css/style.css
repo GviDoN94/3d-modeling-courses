@@ -6,6 +6,8 @@
   --section-bg-dark: #212133;
   --teacher-descr: #85859B;
   --course-bg: #EDF0F9;
+  --orange: #FF9900;
+  --dark-orange: #E1670E;
 }
 
 @font-face {
@@ -29,6 +31,27 @@
 }
 
 /* global */
+@media (min-width: 1024px) {
+  .header__logo:hover:not(:focus-visible) {
+    color: var(--orange);
+  }
+
+  .nav__link:hover:not(:focus-visible) {
+    color: var(--orange);
+  }
+
+  .nav__link:hover:not(:focus-visible)::before {
+    transform: scaleX(1);
+  }
+
+  .link:hover:not(:focus-visible) {
+    outline-color: var(--orange);
+  }
+
+  .social__link:hover:not(:focus-visible) {
+    color: var(--orange);
+  }
+}
 
 .body {
   min-width: 320px;
@@ -52,12 +75,24 @@
   display: inline-block;
   padding: 25px 75px 23px;
   border-radius: 20px;
+  outline: 2px solid transparent;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
   text-decoration: none;
   color: var(--white);
   background-color: var(--blue);
+  transition-property: outline-color, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.link:focus-visible {
+  outline-color: var(--orange);
+}
+
+.link:active:not(:focus-visible) {
+  opacity: 0.8;
 }
 
 .section {
@@ -100,15 +135,61 @@
   background-color: var(--blue);
 }
 
+.header__logo {
+  position: relative;
+  outline: none;
+  color: var(--white);
+}
+
+.header__svg {
+  fill: currentColor;
+  transition: fill 0.3s ease-in-out;
+}
+
+.header__logo:focus-visible {
+  color: var(--orange);
+}
+
+.header__logo:active:not(:focus-visible) {
+  color: var(--dark-orange);
+}
+
 .nav__item:not(:last-child) {
   margin-right: 57px;
 }
 
 .nav__link {
+  position: relative;
+  outline: none;
   font-size: 18px;
   line-height: 21px;
   text-decoration: none;
   color: var(--white);
+  transition: color 0.3s ease-in-out;
+}
+
+.nav__link::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.nav__link:focus-visible {
+  color: var(--orange);
+}
+
+.nav__link:focus-visible:before {
+  transform: scaleX(1);
+}
+
+.nav__link:active:not(:focus-visible) {
+  color: var(--dark-orange);
 }
 
 .burger {
@@ -317,6 +398,20 @@
 
 .social__link {
   display: inline-block;
+  outline: none;
+  color: var(--white);
+}
+
+.social__link:focus-visible {
+  color: var(--orange);
+}
+
+.social__link:active:not(:focus-visible) {
+  color: var(--dark-orange);
+}
+
+.social__svg {
+  fill: currentColor;
 }
 
 .footer__bottom {
