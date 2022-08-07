@@ -137,12 +137,15 @@
 
 .header__logo {
   position: relative;
+  margin-right: auto;
   outline: none;
   color: var(--white);
   transition: color 0.3s ease-in-out;
 }
 
 .header__svg {
+  width: 94px;
+  height: 21px;
   fill: currentColor;
 }
 
@@ -351,6 +354,8 @@
 
 .teacher__img {
   margin-bottom: 27px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .teacher__name {
@@ -445,6 +450,7 @@
 
 .course__link {
   padding: 20px 60px;
+  margin-top: auto;
   font-size: 16px;
   line-height: 19px;
 }
