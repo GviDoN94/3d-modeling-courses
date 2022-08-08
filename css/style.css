@@ -58,6 +58,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.stop-scroll {
+  overflow: hidden;
+}
+
 .list-reset {
   margin: 0;
   padding: 0;
