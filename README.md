@@ -1,1 +1,1 @@
-# 3D Modeling Courses is [there](https://gvidon94.github.io/3d-modeling-courses/)
+# 3D Modeling Courses is [here](https://3d-modeling-courses.vladislavsurin.ru/)
